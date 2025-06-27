@@ -1,0 +1,5 @@
+write permissions to directory
+
+sudo chown -R $USER:$USER pathtodirectory
+
+
