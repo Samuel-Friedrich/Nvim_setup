@@ -24,5 +24,16 @@ return require('packer').startup(function(use)
 
 
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+
+		-- 🌑 Onedark theme
+	use {
+		'navarasu/onedark.nvim',
+		config = function()
+			require('onedark').setup {
+				style = 'darker'  -- Try 'dark', 'cool', 'deep', 'warm', 'warmer', 'light'
+			}
+			require('onedark').load()
+		end
+	}
 	
 end)
